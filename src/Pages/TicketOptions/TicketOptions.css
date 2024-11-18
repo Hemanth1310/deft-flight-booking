@@ -1,0 +1,11 @@
+.ticket-options{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.tp-selection{
+    display: flex;
+    gap: 50px;
+}

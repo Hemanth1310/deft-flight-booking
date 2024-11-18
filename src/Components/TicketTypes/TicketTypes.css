@@ -1,0 +1,101 @@
+.ticket-types{
+    width:300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 50px;
+    border-radius: 30px;
+    border: 2px solid #333;
+    gap:30px
+}
+
+.standard{
+    border-color: var(--primary-brand-color);
+    border-width: 2px;
+}
+
+.Standardplus{
+    border-color: #3523DA;
+    border-width: 5px;
+}
+.flexi{
+    border-color: #AE8D1F;
+    border-width: 5px;
+}
+
+.tt-option-name{
+    font-size: 28px;
+    font-weight: 500;
+
+}
+
+.ticket-types li{
+    font-size: 18px;
+    text-align: left;
+    padding-bottom: 25px;
+}
+
+.tt-info{
+    height: 500px;
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    gap:20px
+}
+
+
+.tt-recommended{
+    background: #3523DA;
+    color: #fff;
+    width: 70%;
+    padding: 5px 10px;
+    border-radius: 30px ;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+.tt-price{
+    color: #333;
+    font-size: 32px;
+}
+
+.tt-price span{
+    color: #a0a0a0;
+}
+
+.tt-conditions{
+    color: #a0a0a0;
+}
+
+
+.std-btn{
+    border:1px solid var(--primary-brand-color);
+    color: var(--primary-brand-color);
+    padding:25px;
+    border-radius: 20px;
+    font-size: 24px;
+    background: none;
+    /* max-width: 100px; */
+    width: 300px;
+}
+
+.stdplus-btn{
+    background:var(--primary-brand-color);
+    padding:25px;
+    color:#fff;
+    border-radius: 20px;
+    font-size: 24px;
+    width: 300px;
+    border: none;
+}
+
+.flexi-btn{
+    background:#DA2335;
+    padding:25px;
+    color:#fff;
+    border-radius: 20px;
+    font-size: 24px;
+    width: 300px;
+    border: none;
+}
+

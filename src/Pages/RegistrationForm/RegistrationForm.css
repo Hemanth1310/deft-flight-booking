@@ -1,0 +1,70 @@
+.registration{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    justify-content: space-around
+}
+
+.registration-form{
+    display: flex;
+    gap: 300px;
+    align-items: center;
+
+}
+.form-username{
+    display: flex;
+    gap:30px
+}
+.input-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 30px;
+
+}
+.input-container label{
+    font-size: 24px;
+    margin-bottom: 10px;
+
+}
+.input-container input{
+    width: 300px;
+    height: 35px;
+    padding: 5px;
+}
+
+.relax-img{
+    height: 300px;
+}
+
+.cookie-checkbox{
+    display: flex;
+    /* width:300px; */
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cookie-checkbox span{
+    color: blue;
+    cursor: pointer;
+}
+
+input[type='checkbox']{
+    width: 20px;
+    height: 20px;
+    accent-color: #4CAF50; 
+    cursor: pointer;
+}
+
+input[type='checkbox']:checked{
+    accent-color: #ff0000; ;
+}
+
+.cookie-checkbox p{
+    width:600px;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.5;
+}

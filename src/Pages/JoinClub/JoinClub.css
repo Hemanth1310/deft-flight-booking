@@ -1,0 +1,31 @@
+.joinClub{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jc-container{
+    display: flex;
+    flex-direction: column;
+    gap:30px
+}
+
+.jc-info-banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1200px;
+    background: #C5ECF4;
+    gap:40px;
+    padding: 100px 200px;
+}
+.jc-info-banner p{
+    font-size: 24px;
+}
+
+.jc-guest span{
+    color: var(--primary-brand-color);
+    font-size: 24px;
+    cursor: pointer;
+}

@@ -1,0 +1,9 @@
+.bluebutton{
+    background: var(--primary-brand-color);
+    padding:25px;
+    color:#fff;
+    border-radius: 20px;
+    font-size: 24px;
+    /* max-width: 100px; */
+
+}

@@ -1,0 +1,7 @@
+.airlineSelection{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    align-items: center;
+    gap:50px
+}

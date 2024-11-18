@@ -1,0 +1,46 @@
+.ds-dates{
+    border: 2px solid #313638;
+    padding: 10px 50px;
+    /* width: 1200px; */
+    max-width: 1400px;
+    width: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+    gap:80px;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.ds-date{
+    font-size: 18px;
+    color: #a0a0a0;
+}
+
+
+
+.ds-price{
+    font-size: 24px;
+    font-weight: 900;
+    color: #a0a0a0;
+
+    
+}
+
+.ds-selected{
+    color: #313638;
+}
+
+.ds-current-date{
+    width: 100px;
+    height: 25px;
+    background: #DAD123;
+    color: #fff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ds-fade{
+    color: #c4c4c4;
+}

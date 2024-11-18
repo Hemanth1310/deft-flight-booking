@@ -1,0 +1,110 @@
+.airlineOption{
+    width: 1600px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid #313638 ;
+    border-radius: 70px;
+    align-items: center;
+    padding:0px 100px 0px 100px;
+    box-sizing: border-box;
+}
+
+
+.ap-Recommended{
+    border: 5px solid #3523DA !important;
+    padding:30px 100px 0px 100px !important;
+}
+.ap-flight-details{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex:5;
+    width: 100%;
+}
+.ap-pref{
+    display: flex;
+    flex-direction: column;
+    gap:20px
+}
+.ap-airline-name{
+    font-size: 42px;
+    font-weight: 900;
+}
+
+.ap-tag{
+    width: 100px;
+    height: 25px;
+    /* background: #DAD123; */
+    color: #fff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ap-tag.tag-yellow{
+    background: #DAD123;
+}
+
+.ap-tag.tag-green{
+    background: #359617;
+}
+
+.ap-tag.tag-red{
+    background: #c70e0e;
+}
+
+
+.ap-timedetails{
+
+}
+
+.ap-time{
+    font-size: 28px;
+}
+
+.ap-date{
+    font-size: 18px;
+    color: #a0a0a0;
+}
+
+.linestrike-airline{
+    width: 200px;
+    height: 3px;
+    background: #313638 ;
+}
+
+.travtime{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.tkt-price{
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.pperson{
+    font-size: 20px;
+}
+
+.ap-fade{
+    color: #c4c4c4;
+}
+.ap-recommendation{
+    background: #3523DA;
+    color: #fff;
+    width: 100%;
+    padding: 10px 30px;
+    border-radius: 30px 30px 0px 0px;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+.ap-recommendation p{
+    padding: 0px;
+    margin: 0px;
+    outline: 0px;
+}
