@@ -6,16 +6,22 @@ import reportWebVitals from './reportWebVitals';
 import SelectedAirlineContextProvider from './Contexts/SelectedAirlineContext';
 import CoookieConsentContextProvider from './Contexts/CookieConsentContext';
 import MembershipStatusContextProvider from './Contexts/MembershipStatusContext';
+import UIDContextProvider, { UIDContext } from './Contexts/UIDContext';
+import OccuranceContextProvider, { OccuranceContext } from './Contexts/OccuranceContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <SelectedAirlineContextProvider>
-       <CoookieConsentContextProvider>
-            <MembershipStatusContextProvider>
-                 <App />
-            </MembershipStatusContextProvider>
-       </CoookieConsentContextProvider>
-    </SelectedAirlineContextProvider>
+    <UIDContextProvider>
+        <OccuranceContextProvider>
+            <SelectedAirlineContextProvider>
+                <CoookieConsentContextProvider>
+                        <MembershipStatusContextProvider>
+                            <App />
+                        </MembershipStatusContextProvider>
+                </CoookieConsentContextProvider>
+            </SelectedAirlineContextProvider>
+        </OccuranceContextProvider>
+    </UIDContextProvider>
   
 );
 

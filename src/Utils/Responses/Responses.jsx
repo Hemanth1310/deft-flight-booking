@@ -12,13 +12,21 @@ import { SelectedAirlineContext } from '../../Contexts/SelectedAirlineContext'
 import flight_info from '../../Assets/flights_info'
 import { BlueButton } from '../../Components/BlueButton/BlueButton'
 import { useEffect } from 'react'
+import { UIDContext } from '../../Contexts/UIDContext.jsx';
+import { OccuranceContext } from '../../Contexts/OccuranceContext.jsx';
 export const Responses = () => {
+
+    const {uid,handleUID} = useContext(UIDContext);
+    const {occurance,handleOccurance} = useContext(OccuranceContext)
+    const ospf = occurance==='fo'?'fod':'sod'
+
     const navigate=useNavigate()
     const {fp,cat}=useParams();
     const {consentStatus,updateConsent} = useContext(CoookieConsentContext)
     const {membershipStatus,updateMembership} = useContext(MembershipStatusContext)
     const {opt,updateOpt} = useContext(SelectedAirlineContext)
     const participant_data={
+        'UID':`${uid}`,
         'RegistrationStatus':`${membershipStatus?'Registred-User':'Guest'}`,
         'CookieConsent':`${consentStatus?'rejected':'approved'}`,
         'Airline':`${flight_info[opt].airline}`,
@@ -35,7 +43,7 @@ export const Responses = () => {
         updateOpt('')
       
         // navigate('/')
-        window.location.href = 'https://cdp-ticketing-interface-study.web.app/SecondPart/2'
+        window.location.href = `https://cdp-ticketing-interface-study.web.app/SecondPart/2/${uid}/${ospf}`
     }
 
     // Function to add data
@@ -88,7 +96,7 @@ const addBooking = async () => {
                <span>{Number(flight_info[opt].price)+Number(cat)+10}</span>
         </div>
 
-        <BlueButton name="Next Participant" clickHandler={onSumbit}></BlueButton>
+        <BlueButton name="Continue" clickHandler={onSumbit}></BlueButton>
 
     </div>
   )
