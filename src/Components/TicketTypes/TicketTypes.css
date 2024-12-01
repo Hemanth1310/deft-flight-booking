@@ -19,8 +19,12 @@
     border-width: 5px;
 }
 .flexi{
-    border-color: #AE8D1F;
-    border-width: 5px;
+    /* border-color: #AE8D1F; */
+    /* border-width: 5px; */
+    border: 10px solid #F3B000;
+    border-radius: 30px;
+  /* border-image: linear-gradient(to top, #F3B000, #FFA43E) 1; */
+
 }
 
 .tt-option-name{
@@ -42,16 +46,23 @@
     align-items: center;
     gap:20px
 }
-
+.flexi-banner{
+    /* background: #E08218; */
+    background: #DA2335;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
 
 .tt-recommended{
     background: #3523DA;
     color: #fff;
     width: 70%;
-    padding: 5px 10px;
+    padding: 10px 20px;
     border-radius: 30px ;
     font-size: 20px;
     box-sizing: border-box;
+    font-weight: 600;
 }
 
 .tt-price{
@@ -93,7 +104,8 @@
 }
 
 .flexi-btn{
-    background:#DA2335;
+    /* background:#DA2335; */
+    background: #E08218;
     padding:25px;
     color:#fff;
     border-radius: 20px;

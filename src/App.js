@@ -9,12 +9,13 @@ import { TicketOptions } from './Pages/TicketOptions/TicketOptions';
 import { Checkout } from './Pages/CheckOut/Checkout';
 import { Responses } from './Utils/Responses/Responses';
 import { Questionnaire } from './Pages/Questionnaire/Questionnaire';
+import { EndTestDashboard } from './Pages/EndTestDashboard/EndTestDashboard';
 function App() {
   return (
     <div className="App">
      <BrowserRouter>
       <Routes>
-        <Route path='/:pid/:ospf' element={<Home></Home>}></Route>
+        <Route path='/:ospf' element={<Home></Home>}></Route>
         <Route path='/airlineSelection' element={<AirlineSelection></AirlineSelection>}></Route>
         <Route path='/registration' element={<RegistrationForm></RegistrationForm>}></Route>
         <Route path='/joinClub' element={<JoinClub></JoinClub>}></Route>
@@ -22,6 +23,8 @@ function App() {
         <Route path='/checkout/:fp/:cat' element={<Checkout></Checkout>}></Route>
         <Route path='/questionnaire/:fp/:cat' element ={<Questionnaire/>}></Route>
         <Route path='/analysis/:fp/:cat' element={<Responses></Responses>}></Route>
+       
+        <Route path= '/endDashboard' element={<EndTestDashboard/>}></Route>
       </Routes>
      </BrowserRouter>
     </div>

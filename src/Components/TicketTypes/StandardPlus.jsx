@@ -23,7 +23,7 @@ export const StandardPlus = (props) => {
                 </ul>
                 <div>
                     <p className='tt-price'>${price}<span>/Person</span></p>
-                    <p className='tt-conditions'>*Standard ticket price plus tax</p>
+                    {/* <p className='tt-conditions'>*Standard ticket price plus tax</p> */}
                 </div>
         </div>
         <div className='tt-action'>

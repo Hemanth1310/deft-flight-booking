@@ -15,6 +15,7 @@ export const Standard = (props) => {
     <div className='ticket-types standard'>
     {/* {props.isRecommended?<div className='recommened'>Recommened</div>:null} */}
         <div className='tt-info'>
+        <div className=''></div>
                     <div className='tt-option-name'>Standard</div>
                     <ul>
                         <li>Luaguage Upto 25 kg plus a Hand bag 7kg</li>

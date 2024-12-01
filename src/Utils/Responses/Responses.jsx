@@ -44,7 +44,8 @@ export const Responses = () => {
         updateOpt('')
       
         // navigate('/')
-        window.location.href = `https://cdp-ticketing-interface-study.web.app/SecondPart/2/${uid}/${ospf}`
+        navigate('/endDashboard')
+        // window.location.href = `https://cdp-ticketing-interface-study.web.app/SecondPart/2/${uid}/${ospf}`
     }
 
     // Function to add data
@@ -65,9 +66,9 @@ const addBooking = async () => {
 
     return (
     <div className='responses'>
-       <h1> Thank You For the FeedBack</h1>
-
-        <BlueButton name="Continue To next Part of the Study" clickHandler={onSumbit}></BlueButton>
+       <h1> Thank you for your participation!</h1>
+       <h2> You can now close the Window</h2>
+        {/* <BlueButton name="Continue To next Part of the Study" clickHandler={onSumbit}></BlueButton> */}
 
     </div>
   )

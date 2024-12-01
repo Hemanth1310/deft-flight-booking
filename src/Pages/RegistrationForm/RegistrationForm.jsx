@@ -78,7 +78,7 @@ export const RegistrationForm = () => {
                         </div>     
                     </div>
                     <div className="input-container">
-                        <label>DOB</label>
+                        <label>Date Of Birth</label>
                         <input type="date" name="dob" value={userDetails.dob} onChange={handleInputChange} />
                         {errors.dob && <span className="error">{errors.dob}</span>}
                     </div> 

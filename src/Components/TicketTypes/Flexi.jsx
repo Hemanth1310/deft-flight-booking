@@ -15,7 +15,7 @@ export const Flexi = (props) => {
   return (
     <div className='ticket-types flexi'>
         <div className='tt-info'>
-                <div className='tt-option-name'>Flexi</div>
+                <div className='tt-option-name flexi-banner'>Flexi</div>
                         <ul>
                             <li>Luaguage Upto 25 kg plus a Hand bag 7kg</li>
                             <li>Full Refund on Cancellation</li>

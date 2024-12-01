@@ -80,9 +80,15 @@
     color:#fff;
     border-radius: 20px;
     font-size: 24px;
-    width: 500px;
+    width: 300px;
+    height: 200px;
     border:none;
     font-weight:600;
+}
+
+.submit-mod{
+    background: var(--primary-brand-color) !important;
+    color:#fff !important;
 }
 .invalid {
     border: 1px solid red;

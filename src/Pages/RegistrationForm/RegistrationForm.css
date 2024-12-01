@@ -85,3 +85,7 @@ input[type='checkbox']:checked{
     text-decoration: underline;
   }
   
+  .registration-form .error{
+    color:#ff0000;
+    margin-top: 10px;
+  }

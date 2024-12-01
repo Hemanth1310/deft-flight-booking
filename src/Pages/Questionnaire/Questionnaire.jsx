@@ -129,7 +129,7 @@ export const Questionnaire = () => {
                     </tbody>
                 </table>
             </div>
-            {catCurrentIndex <= categories.length - 1 ? (
+
                 <div className="form-actions">
                     <button
                         className="ques-bordered-button"
@@ -138,23 +138,26 @@ export const Questionnaire = () => {
                     >
                         Previous
                     </button>
-                    <button
+                    {catCurrentIndex === categories.length - 1?
+                       <button
+                       className="ques-bordered-button submit-mod"
+                       disabled={catCurrentIndex !== categories.length - 1}
+                       onClick={onSubmit}
+                   >
+                       Submit
+                   </button>:  <button
                         className="ques-bordered-button"
                         disabled={catCurrentIndex === categories.length - 1}
                         onClick={handleNext}
                     >
                         Next
                     </button>
-                </div>
-            ) : null}
 
-            <button
-                className="ques-submit-button"
-                disabled={catCurrentIndex !== categories.length - 1}
-                onClick={onSubmit}
-            >
-                Submit
-            </button>
+                    }
+                  
+                </div>
+
+         
         </div>
     );
 };

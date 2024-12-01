@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import './Checkout.css'
 import { useParams } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
@@ -16,6 +16,11 @@ export const Checkout = () => {
         // navigate(`/analysis/${fp}/${cat}`)
         navigate(`/questionnaire/${fp}/${cat}`)
     }
+
+    useEffect(() => {
+      localStorage.setItem('deft-cookieStatus',false)
+    }, [])
+    
   return (
     <div className='checkout'>
        <ChoosenFlight></ChoosenFlight>
