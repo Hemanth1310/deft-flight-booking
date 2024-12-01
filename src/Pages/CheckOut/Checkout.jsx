@@ -13,7 +13,8 @@ export const Checkout = () => {
     const navigate=useNavigate()
 
     const onAnalysis=()=>{
-        navigate(`/analysis/${fp}/${cat}`)
+        // navigate(`/analysis/${fp}/${cat}`)
+        navigate(`/questionnaire/${fp}/${cat}`)
     }
   return (
     <div className='checkout'>
@@ -42,7 +43,7 @@ export const Checkout = () => {
         <div className='ck-conclusion'>
             <h1>Booking Successful Thank You!!!</h1>
         </div>
-        <BlueButton name='END STUDY' clickHandler={onAnalysis}></BlueButton>
+        <BlueButton name='Go to Feedback' clickHandler={onAnalysis}></BlueButton>
     </div>
   )
 }

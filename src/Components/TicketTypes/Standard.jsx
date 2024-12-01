@@ -22,7 +22,7 @@ export const Standard = (props) => {
                         <li>No Lost Baggage Insuarance </li>
                     </ul>
                     <div>
-                        <p className='tt-price'>${price}<span>/Person</span></p>
+                        <p className='tt-price'>${price}<span>/Per Person</span></p>
                     
                     </div>
         </div>

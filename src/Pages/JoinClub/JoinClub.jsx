@@ -22,7 +22,7 @@ export const JoinClub = () => {
             <div className='jc-info-banner'>
                 <h1>Why Join AirClub?</h1>
                 <div>
-                <p>Join airclub  and earn miles on flights with 5 partnered airlines</p>
+                <p>Join airclub and earn miles on flights with 5 partnered airlines</p>
                 <p>Be considered for upgrade, special on-boarding services and many more discounts</p>
                 </div>
                 <BlueButton name='Join Club' clickHandler={onJoin}></BlueButton>

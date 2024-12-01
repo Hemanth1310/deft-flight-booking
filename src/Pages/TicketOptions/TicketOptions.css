@@ -4,6 +4,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 50px;
+    margin-bottom: 50px;
 }
 .tp-selection{
     display: flex;

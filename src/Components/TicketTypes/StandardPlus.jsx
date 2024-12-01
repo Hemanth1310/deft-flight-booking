@@ -14,7 +14,7 @@ export const StandardPlus = (props) => {
   return (
     <div className='ticket-types Standardplus'>
          <div className='tt-info'>
-                <div className='tt-recommended'>Recommened</div>
+                <div className='tt-recommended'>Recommended</div>
                 <div className='tt-option-name'>Standard Plus</div>
                 <ul>
                     <li>Luaguage Upto 25 kg plus a Hand bag 7kg</li>

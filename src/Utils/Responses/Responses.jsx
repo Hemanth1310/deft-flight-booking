@@ -19,7 +19,7 @@ export const Responses = () => {
     const {uid,handleUID} = useContext(UIDContext);
     const {occurance,handleOccurance} = useContext(OccuranceContext)
     const ospf = occurance==='fo'?'fod':'sod'
-
+    const UserFeedBack = JSON.parse(localStorage.getItem('userFeedback') )
     const navigate=useNavigate()
     const {fp,cat}=useParams();
     const {consentStatus,updateConsent} = useContext(CoookieConsentContext)
@@ -27,14 +27,15 @@ export const Responses = () => {
     const {opt,updateOpt} = useContext(SelectedAirlineContext)
     const participant_data={
         'UID':`${uid}`,
-        'RegistrationStatus':`${membershipStatus?'Registred-User':'Guest'}`,
+        'RegistrationStatus':`${membershipStatus?'Registered-User':'Guest'}`,
         'CookieConsent':`${consentStatus?'rejected':'approved'}`,
         'Airline':`${flight_info[opt].airline}`,
         'BasicTicketPrice':`${flight_info[opt].price}`,
         'TicketCategory':`${cat==='0'?'Standard':
             cat==='30'?'Standard Plus':
             cat==='40'?'Flexi':null}`,
-        'TotalSpendings':`${Number(flight_info[opt].price)+Number(cat)+10}`    
+        'TotalSpendings':`${Number(flight_info[opt].price)+Number(cat)+10}`,
+        'UserFeedBack':`${localStorage.getItem('userFeedback')}`
     }
     const onSumbit=()=>{
         console.log(participant_data)
@@ -64,39 +65,9 @@ const addBooking = async () => {
 
     return (
     <div className='responses'>
-       <h1> Responses</h1>
+       <h1> Thank You For the FeedBack</h1>
 
-        <div className='res-listing'>
-                <p>Registration Status:</p>
-                {membershipStatus?<span>Registred-User</span>:<span>Guest</span>}
-        </div>
-        <div className='res-listing'>
-                <p>Cookie Consent:</p>
-                <span>{consentStatus?'rejected':'approved'}</span>
-        </div>
-
-        <div className='res-listing'>
-                <p>Airline:</p>
-                <span>{flight_info[opt].airline}</span>
-        </div>
-        <div className='res-listing'>
-                <p>Basic Ticket Price:</p>
-                <span>{flight_info[opt].price}</span>
-        </div>
-        <div className='res-listing'>
-                <p>Ticket Category:</p>
-                
-                {cat==='0'?<span>Standard</span>:
-                cat==='30'?<span>Standard Plus</span>:
-                cat==='40'?<span>Flexi</span>:null}
-        </div>
-        <div className='res-listing'>
-                <p>Total Spendings:</p>
-                
-               <span>{Number(flight_info[opt].price)+Number(cat)+10}</span>
-        </div>
-
-        <BlueButton name="Continue" clickHandler={onSumbit}></BlueButton>
+        <BlueButton name="Continue To next Part of the Study" clickHandler={onSumbit}></BlueButton>
 
     </div>
   )

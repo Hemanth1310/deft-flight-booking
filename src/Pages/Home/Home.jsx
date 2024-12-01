@@ -5,6 +5,7 @@ import { BlueButton } from '../../Components/BlueButton/BlueButton'
 import { useNavigate, useParams } from 'react-router-dom'
 import { UIDContext } from '../../Contexts/UIDContext'
 import { OccuranceContext } from '../../Contexts/OccuranceContext'
+import { Persona } from '../../Components/Persona/Persona'
 
 export const Home = () => {
     const navigate = useNavigate();
@@ -12,7 +13,7 @@ export const Home = () => {
 
     const {uid,handleUID} = useContext(UIDContext);
     const {occurance,handleOccurance} = useContext(OccuranceContext)
-    
+
     const onNext=()=>{
         navigate('/airlineSelection');
     }
@@ -30,8 +31,9 @@ export const Home = () => {
         <h1>Welcome to our flight Booking Portal (Study-B)</h1>
         <p>Please Continue to Book your next flight</p>
         </div>
+        <Persona></Persona>
      
-        <RouteInfo></RouteInfo>
+        {/* <RouteInfo></RouteInfo> */}
         <BlueButton name="Continue to Book >" clickHandler={onNext}></BlueButton>
     </div>
   )

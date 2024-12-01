@@ -8,6 +8,7 @@ import { JoinClub } from './Pages/JoinClub/JoinClub';
 import { TicketOptions } from './Pages/TicketOptions/TicketOptions';
 import { Checkout } from './Pages/CheckOut/Checkout';
 import { Responses } from './Utils/Responses/Responses';
+import { Questionnaire } from './Pages/Questionnaire/Questionnaire';
 function App() {
   return (
     <div className="App">
@@ -19,6 +20,7 @@ function App() {
         <Route path='/joinClub' element={<JoinClub></JoinClub>}></Route>
         <Route path='/ticketOptions' element={<TicketOptions></TicketOptions>}></Route>
         <Route path='/checkout/:fp/:cat' element={<Checkout></Checkout>}></Route>
+        <Route path='/questionnaire/:fp/:cat' element ={<Questionnaire/>}></Route>
         <Route path='/analysis/:fp/:cat' element={<Responses></Responses>}></Route>
       </Routes>
      </BrowserRouter>
